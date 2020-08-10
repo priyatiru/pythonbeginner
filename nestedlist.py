@@ -1,6 +1,6 @@
 def secondlow(students):
     grades = []
-    for student in students:
+    for student in students: 
         grades.append(student[1])
     sort_grades = sorted(grades)
     seclow_grade = sort_grades[0]
@@ -9,10 +9,10 @@ def secondlow(students):
             seclow_grade = grade
             break
     seclow_stud = []
-    for student in students:
+    for student in students: 
         if student[1] == seclow_grade:
             seclow_stud.append(student[0])
-    for name in sorted(seclow_stud):
+    for name in sorted(seclow_stud): 
         print(name)
 
 
