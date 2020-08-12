@@ -1,0 +1,6 @@
+n=int(input())
+n_val=set(map(int,input().split()))
+b=int(input())
+b_val=set(map(int,input().split()))
+x=n_val.union(b_val)
+print(len(x))
