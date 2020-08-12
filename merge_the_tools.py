@@ -6,7 +6,6 @@ def merge_the_tools(string, k):
             if i not in seen:
                 print(i,end="")
                 seen.add(i)
-        #prints a new line
         print()
 
 
