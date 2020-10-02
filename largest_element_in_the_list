@@ -1,0 +1,16 @@
+# Python Program to find Largest Number in a List and also the index position of that largest element
+
+NumList = []
+Number = int(input("Please enter the Total Number of List Elements: "))
+for i in range(1, Number + 1):
+    value = int(input("Please enter the Value of %d Element : " %i))
+    NumList.append(value)
+
+largest = NumList[0]    
+for j in range(1, Number):
+    if(largest < NumList[j]):
+        largest = NumList[j]
+        position = j
+
+print("The Largest Element in this List is : ", largest)
+print("The Index position of the Largest Element is : ", position)
